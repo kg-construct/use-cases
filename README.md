@@ -1,5 +1,5 @@
-# Use-cases
-Knowledge Graph Construction Use Cases
+# Knowledge Graph Construction Use Cases
+This repository shows the uses cases from all the participants of the Knowledge Graph Construction Community Group.
 
 ## How to include my own use case in the KG-Construction CM?
 
