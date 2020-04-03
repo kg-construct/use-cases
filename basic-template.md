@@ -13,6 +13,4 @@
 - Data:
 - Mappings:
 - Ontology:
-
-
-## Output
+- Output
