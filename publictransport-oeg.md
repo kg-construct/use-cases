@@ -17,5 +17,5 @@ Transmodel is the European Reference Data Model for Public Transport. It provide
 - Mappings: https://github.com/oeg-upm/gtfs-bench/tree/master/mappings  
 - Ontology: https://github.com/OpenTransport/linked-gtfs/blob/master/spec.md (to be replaced by Transmodel)
 - Output: 
-	- Option 1: Materialization using [SDM-RDFizer](https://github.com/oeg-upm/morph-csv) (RDF dump)
-	- Option 2: Virtualization using [Morph-CSV](https://github.com/SDM-TIB/SDM-RDFizer) (SPARQL result set)
+	- Option 1: Materialization using [SDM-RDFizer](https://github.com/SDM-TIB/SDM-RDFizer) (RDF dump)
+	- Option 2: Virtualization using [Morph-CSV](https://github.com/oeg-upm/morph-csv) (SPARQL result set)
