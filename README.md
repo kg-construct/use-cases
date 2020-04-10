@@ -5,7 +5,7 @@ This repository shows the uses cases from all the participants of the Knowledge 
 
 ### Github users:
 - Make a fork of the repository to your own personal account.
-- Make a copy of the [basic-template.md](https://github.com/kg-construct/use-cases/blob/master/basic-template.md) and change its name to: organization-usecasename.md.
+- Make a copy of the [basic-template.md](https://github.com/kg-construct/use-cases/blob/master/basic-template.md) and change its name to: usecasename-organization.md.
 - Fill the template with the requested information.
 - Make a pull request.
 
