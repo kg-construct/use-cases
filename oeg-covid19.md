@@ -10,9 +10,10 @@ We want to create a catalog of medicines used to combat COVID-19, according to s
 4. Flexible pipeline for continuos changes
 
 ## Resources
-- Website: https://drugs4covid.oeg-upm.net/EN
-- Data: http://librairy.linkeddata.es/data/#/covid/query
-- Mappings: https://github.com/oeg-upm/drugs4covid19-kg/blob/master/mapping05042020.yaml
+- Website: https://kg.drugs4covid.oeg-upm.net/
+- Data: 4 Solr Databases with data and NLP annotations from Papers (Parse to CSV)
+- Endpoint: https://kg.drugs4covid.oeg-upm.net/sparql
+- Mappings: https://github.com/oeg-upm/drugs4covid19-kg/tree/master/mappings
 - Ontology: https://w3id.org/def/DRUGS4COVID19
 - Output (using [SDM-RDFizer](https://github.com/SDM-TIB/SDM-RDFizer)):
 ![pipeline](images/oeg-covid.png?raw=true)
