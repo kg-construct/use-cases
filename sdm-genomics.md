@@ -16,4 +16,5 @@ Precision oncology and personalized medicine rely on the accurate integration an
 - Website: https://github.com/SDM-TIB/LungCancerGenomicKG
 - Data: https://cancer.sanger.ac.uk/cosmic , https://civicdb.org/home , https://www.oncokb.org/
 - Mappings: https://github.com/SDM-TIB/LungCancerGenomicKG/tree/master/mapping
+- Output: RDF triples are created using https://github.com/SDM-TIB/SDM-RDFizer
 
