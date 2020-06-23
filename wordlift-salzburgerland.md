@@ -7,7 +7,7 @@ The aim of this use case is to show how an **enterprise knowledge graph** can ha
 * Improve the effectiveness of a **content marketing** strategy by pushing on search engine optimization
 * Allow **content reuse** both by SalzburgerLand and by its business partners in the region
 * Organizing existing and new content to **match different search intents**.
-Starting from this use case, WordLift has developed an [AI-powered SEO framework for travel brands](https://wordlift.io). 
+Starting from this use case, WordLift has developed an [AI-powered SEO framework for travel brands](https://wordlift.io/blog/en/knowledge-graphs-travel/). 
 
 
 ## Challenges
