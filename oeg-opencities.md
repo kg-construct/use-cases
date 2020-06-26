@@ -9,7 +9,6 @@ The Open Cities Project has as main goal the full development of the government'
 ## Resources
 - Website: [https://ciudadesabiertas.es/](https://ciudadesabiertas.es/)
 - Data: [https://ciudadesabiertas.es/vocabularios/#Cat%C3%A1logoVocabularios](https://ciudadesabiertas.es/vocabularios/#Cat%C3%A1logoVocabularios)
-- Mappings: ???
 - Ontology: [https://github.com/CiudadesAbiertas](https://github.com/CiudadesAbiertas)
 - Tool(s): [https://protege.stanford.edu/](https://protege.stanford.edu/), [https://github.com/oeg-upm/Mapeathor](https://github.com/oeg-upm/Mapeathor), [https://openrefine.org/](https://openrefine.org/)
-- Output: ???
+- Output: [http://ciudadesabiertas.linkeddata.es/sparql](http://ciudadesabiertas.linkeddata.es/sparql)
