@@ -10,8 +10,8 @@ that is much more flexible and powerful than the old Web API.
 
 ## Challenges
 
-1. *Data and Mapping*. For historical reasons, all the database tables are of two columns `id` and `data`, where `id` is a UUID identifying a row and `data` is a JSON object containing rich information. In order to access the internal content of `data`, we have created a customized script to sample the data and extract all possible fileds from the `data` column. Then we create a "relational version" of original table. When there is an array nested in `data`, we need to create a separate table pointing to the parent table using foreign keys.
-2. *Ontology*. The ontology is mostly based on based on schema.org, but we often need to extend it. E.g., `:BeerGarden rdf:type owl:Class ; rdfs:subClassOf schema:BarOrPub .`
+1. *Data and Mapping*. For historical reasons, all the database tables are of two columns `id` and `data`, where `id` is a UUID identifying a row and `data` is a JSON object containing rich information. In order to access the internal content of `data`, we have created a customized script to sample the data and extract all possible fields from the `data` column. Then we create a "relational version" of original table. When there is an array nested in `data`, we need to create a separate table pointing to the parent table using foreign keys.
+2. *Ontology*. The ontology is mostly based on `schema.org`, but we often need to extend it. E.g., `:BeerGarden rdf:type owl:Class ; rdfs:subClassOf schema:BarOrPub .`
 
 ## Resources
 
@@ -24,6 +24,6 @@ that is much more flexible and powerful than the old Web API.
 - Tools
     - [Ontop](http://ontop-vkg.org) for setting up the SPARQL endpoint
     - Ontop Protege plugin for developing ontology and mapping
-    - [Customized Script](https://github.com/noi-techpark/odh-vkg/blob/master/scripts/create_derived_tables_and_triggers_from_db.py) for sampling  thedata and create the "relational version" of the original data.
+    - [Customized Script](https://github.com/noi-techpark/odh-vkg/blob/master/scripts/create_derived_tables_and_triggers_from_db.py) for sampling the data and create the "relational version" of the original data.
 - Output 
     - [SPARQL Endpoint](https://sparql.opendatahub.bz.it/)
