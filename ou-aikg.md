@@ -15,4 +15,4 @@ The Artificial Intelligence Knowledge Graph (AI-KG) is a large-scale automatical
 - SPARQL endpoint: http://w3id.org/aikg/sparql
 - Data dump: http://w3id.org/aikg/downloads/aikg.zip
 - Ontology: http://w3id.org/aikg/aikg/ontology
-- Paper: Danilo Dessì, Francesco Osborne, Diego Reforgiato Recupero, Davide Buscaldi, Enrico Motta, Harald Sack. AI-KG: an Automatically Generated Knowledge Graph of Artificial Intelligence . International Semantic Web Conference 2020. (http://oro.open.ac.uk/71736)
+- Paper: Dessi, D., Osborne, F., Reforgiato Recupero, D., Buscaldi, D., Motta, E. and Sack, H., 2020. AI-KG: an Automatically Generated Knowledge Graph of Artificial Intelligence. International Semantic Web Conference 2020. (http://oro.open.ac.uk/71736)
