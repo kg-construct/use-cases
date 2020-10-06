@@ -6,9 +6,9 @@ The Artificial Intelligence Knowledge Graph (AI-KG) is a large-scale automatical
 
 ## Challenges
 1. Identifying and merging entities that refer to the same concept.
-2. Cleaning up noisy and ambiguos entity
-3. Interlinking AI-KG with other knowledge graphs (e.g., Wikidata)
-4. Verifying consistency and correctness of the statements
+2. Cleaning up noisy and ambiguous entities.
+3. Interlinking AI-KG with other knowledge graphs (e.g., Wikidata).
+4. Verifying consistency and correctness of the statements.
 
 ## Resources
 - Website: http://w3id.org/aikg
