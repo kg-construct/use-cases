@@ -17,7 +17,7 @@ The SPARQL micro-service architecture (see [associated tool](https://github.com/
 
 - Assist service designer in mapping the Web API result to an RDF representation
 - Deal with evolving Web APIs / interface breaks
-- Make such APIs discoverable, actionable and composable at webscale. In this regard, SPAQRL micro-services propose the autmatic markup of HTML documentation as http://schema.or/Dataset to allow webscale discoverability, e.g. with Google Dataset Search, and SHACL description to allow for automatic composition.
+- Make such APIs discoverable, actionable and composable at webscale. In this regard, SPAQRL micro-services propose the autmatic markup of HTML documentation as http://schema.org/Dataset to allow webscale discoverability, e.g. with Google Dataset Search, and SHACL description to allow for automatic composition.
 
 
 ## Resources
