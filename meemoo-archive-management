@@ -28,5 +28,9 @@ Highly recommended to provide a brief description of each resource but also link
 - Data: hetarchief.be
 - Mappings: not yet
 - Ontology: PREMIS, Dublin Core, CIDOC-CRM, Linked Art, EBU Core, Schema.org, w3c ORG ontology, Learning Object Models
-- Tool(s) (transformation/access tool but also mapping generator tools): started of with RML, but the tooling is unfortunately not ready in terms of JSONPath support (to be clear: this is not pointing fingers, just the way it is). For the time being, we use a direct mapping from JSON and use SPARQL construct.
+- Tool(s) (transformation/access tool but also mapping generator tools): 
+  - we run a lot of postgres databases that more often than not store metadata records per-row as JSON in one of the cells (note that postgres does have native support for JSON and technically, it can be extracted using postgres SQL)
+  - started of with RML, but the tooling is unfortunately not ready in terms of JSONPath support (to be clear: this is not pointing fingers, just the way it is). For the time being, we use a direct mapping from JSON and use SPARQL construct. 
+  - Maintainability of tooling is very important: whatever tool eventually needs to connect with an orchestrator like Apache Airflow and/or fit into our event-driven microservices workflows using RabbitMQ. Hence, plugins for such systems that allow RDF mapping to be positioned in a wider spectrum of tooling are extremely valueable as well.
+  
 - Output (you could have several outputs with different features, figures with the workflow are also welcome):
