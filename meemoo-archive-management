@@ -1,0 +1,36 @@
+# USE CASE ARCHIVE ME BY ORGANIZATION/GROUP YYY
+
+## Context
+Meemoo (https://meemoo.be/en) is the Flemish Institute for Archives in Belgium.
+We have more than 150 content partners from cultural heritage and media that provide us with
+audiovisual content for digitization and long-term preservation. At present, meemoo stores almost 7
+million objects, ranging from digitised newspapers, photos, video and audio. In addition, we host a
+number of dissemination platforms that make the digitized content available for specific target audiences
+such as teachers, professional reusers, or the general public.
+Metadata is a key element in all our processes. Indeed, an important fraction of our activities is
+collecting, integrating and managing a large variety of heterogeneous metadata on the archived content.
+We are now investigating whether we can evolve this metadata intake and management process to a
+modern infrastructure, possibly (Knowledge) Graph-based.
+
+## Challenges
+Regarding any resource of the KG construction (input data, ontology, mappings, etc)
+1. Scalability and robustness: mapping a high volume of data at medium velocity (not sensor streams, but the throughput can still be significant). Metadata on archived material is either offered in batches or continuously, commonly in XML or JSON. Aditionally, we have some small changing silos that need to be integrated, such as data from a Customer Relationship Management tool, data from LDAP, and metadata about the registration/ingestion process of new material. Above all, this the mapping approach should allow a robust implementation: 
+- it should be easily implementable over a solid foundation such as Spark
+- the approach should be well defined so it can be (unit) tested
+- preferably, it's compatible with a language our devops work with (Python)
+- it has the implications on resource management well thought out, ie. it's implementable with parallelization, without needing TB's of RAM, and with horizontal scaling over clusters)
+2. Transparency: our metadata comes in records and they can be dirty. Therefore, it's important that the mapping process is as transparent and intuitive as possible, meaning that records can be separately mapped, inspected, and succeed/fail. Also important is the usability of the mapping language. Having a a light syntax and being intuitive is way (!!!) more important than being declarative or doing RDF dogfooding.
+3. Combinable: mapping is just one step in the pipeline; it should be intertwinable with validation, cleaning, enrichment through reasoning and ML, and validation again. It's not unlikely that mapping would also be executed at multiple stages, eg. in the beginning when it's per-record and after a few enrichment/validation steps, once again when the data is joined. A monolithical approach is therefore a no go.
+
+## Resources
+Highly recommended to provide a brief description of each resource but also links to them.
+- Website: meemoo.be
+- Data: hetarchief.be
+- Mappings: not yet
+- Ontology: PREMIS, Dublin Core, CIDOC-CRM, Linked Art, EBU Core, Schema.org, w3c ORG ontology, Learning Object Models
+- Tool(s) (transformation/access tool but also mapping generator tools): 
+  - we run a lot of postgres databases that more often than not store metadata records per-row as JSON in one of the cells (note that postgres does have native support for JSON and technically, it can be extracted using postgres SQL)
+  - started of with RML, but the tooling is unfortunately not ready in terms of JSONPath support (to be clear: this is not pointing fingers, just the way it is). For the time being, we use a direct mapping from JSON and use SPARQL construct. 
+  - Maintainability of tooling is very important: whatever tool eventually needs to connect with an orchestrator like Apache Airflow and/or fit into our event-driven microservices workflows using RabbitMQ. Hence, plugins for such systems that allow RDF mapping to be positioned in a wider spectrum of tooling are extremely valueable as well.
+  
+- Output (you could have several outputs with different features, figures with the workflow are also welcome):
